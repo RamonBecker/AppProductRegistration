@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load bootstrap4 %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato</title>
+
+    <!--
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+    -->
+    {% bootstrap_css %}
+</head>
+<body>
+    <div class="container">
+        <h1>Contato</h1>
+
+        {% bootstrap_messages %}
+        <form action="{% url 'contato' %}" method="post" class="post-form" autocomplete="off">
+            <input type="hidden" name="next" value="{{ next }}" />
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% buttons %}
+                <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+            {% endbuttons %}
+        </form>
+    </div>
+
+    <!--
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" ></script>
+    -->
+    {%bootstrap_javascript jquery='full' %}
+</body>
+</html>
