@@ -127,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-MEDIA_URL = 'media/' #Utiliza-se essas configurações para realizar o upload de arquivos como imagens, textos etc...
+MEDIA_URL = '/media/' #Utiliza-se essas configurações para realizar o upload de arquivos como imagens, textos etc...
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Configurações de e-mail, e esta é uma configuração simples de e-mail que printamos no console
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
