@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+from .local_settings import  *
 
 #Usando PosgreSQL com HEROKU
 DATABASES = {
@@ -25,7 +26,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '-t_8dk0tg$#feeh5hz5214#yspr@srzy28^=r_em_@^=$&l-(1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django2',
-        'USER': 'becker',
-        'PASSWORD': 'becker',
-        'HOST': 'localhost',
+        'NAME': 'DB_NAME',
+        'USER': 'DB_USER',
+        'PASSWORD': 'DB_PASSWORD',
+        'HOST': 'DB_HOST',
         'PORT': '',
     }
 }
