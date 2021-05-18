@@ -34,14 +34,14 @@ pip install -r requirements.txt```
 ![](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ```sh
-git clone https://github.com/RamonBecker/AppProdutos.git
+git clone https://github.com/RamonBecker/AppProductRegistration.git
 ```
 
 ![](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 
 ```sh
-git clone https://github.com/RamonBecker/AppProdutos.git
+git clone https://github.com/RamonBecker/AppProductRegistration.git
 or install github https://desktop.github.com/ 
 
 ```
